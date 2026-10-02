@@ -1,0 +1,100 @@
+Authentication-Results: spf=none (sender IP is 209.85.210.74)
+ smtp.mailfrom=gemalim.org; dkim=fail (signature did not verify)
+ header.d=google.com;dkim=fail (signature did not verify)
+ header.d=gemalim-org.20230601.gappssmtp.com;dmarc=none action=none
+ header.from=gemalim.org;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:99EDEDF7FE48C67A03657DACEE2B5D144DB86D445DEE60744F1CD9F3C8BCE71A;UpperCasedChecksum:ED12D62C87F704A2A3851E0263236142B707B6261C0DFE60FE02BC43940F2B3B;SizeAsReceived:3310;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1770155476; x=1770760276; darn=hotmail.sg;
+        h=from:subject:date:message-id:sender:reply-to:mime-version:from:to
+         :cc:subject:date:message-id:reply-to;
+        bh=ogR7wEJ82AWsTV8XttuzBBcIgvPdFo6Eapi9pWQsbXA=;
+        b=wjoqCTaIewDG/P9RF3/PjqukHVl6KkEagU/FNEIsoEGU2O7umIpxQ+9xvPllA7FkzE
+         pzj+l2dL/XtECJ4JK1Tc7e0itaC7VkbBHviA7malXKuTWDhKTCtbx2/TjIV1G3CLBGIQ
+         /sr2pNZ6PsnUJL73YrPGyW0Ju1YBHFkb5o4B0MXsOYCfH1L+ZoSoqxo/qBYnfepYmZCG
+         rQwHQEEi6opBBzaQaPaVyR9+KXdGgaFh4/hqxE2fmBuw2RMtuB/5OauaaICbPEJOI0dd
+         qAJBHaCHCPehMo3BN6R15qol6jcf9uppYGwYMv+PKJBITz7BYJ3HlwsryXNaonaUgx1/
+         BoHQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gemalim-org.20230601.gappssmtp.com; s=20230601; t=1770155476;
+ x=1770760276; darn=hotmail.sg;
+        h=from:subject:date:message-id:sender:reply-to:mime-version:from:to
+         :cc:subject:date:message-id:reply-to;
+        bh=ogR7wEJ82AWsTV8XttuzBBcIgvPdFo6Eapi9pWQsbXA=;
+        b=qtpQM2X91DBYfBo6h3xhuHLZ5YPFmhuNuuvzWYq477lCCnG7Gj9ZL5CTwoFJdzDhZa
+         YmWNIYt+opgBVp8NQpn8h0maHOL/YGhSx7gugEx1WnVJCkzJUe75icsA0pS36g95A16X
+         2ssYMGgTV6wtob9zF8nC+lC7PoCStNOQyCeg/UZ1qDV5+E+crrUaDrwzhfAnGpp2vw3c
+         68zu+we/K83D+GVyIKImDq8iTO73O/dpl4wqC41KRk9nAlF28TYAREjBaO0aRa4GJBOK
+         v4+Mvd3y4vBeLIm8dLZ5CJRCznZrbCEfGPZg/VXB2dLtHUbimQvAVIjeXmzR7IupWjR+
+         ebmA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1770155476; x=1770760276;
+        h=from:subject:date:message-id:sender:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=ogR7wEJ82AWsTV8XttuzBBcIgvPdFo6Eapi9pWQsbXA=;
+        b=poONU5ta86QIvtNaacj+etqRFXq7KbgE25z7nujD/NhyHzOryQUAumSIKj6ypzFzU1
+         JF8lUaEUDTG4JB/fP5b2gduJ4SOSQgHAasCXbnKXjv84cQnlyzFN4gHMU1+lCIMXXcUa
+         DFIPeoo58RNPzLF+BesfPPxphwKmpe91kp/P9SXbVnC5OnYCp2y/EHs5rhDp/Jk9UXI2
+         a48GqUzIzZ1RtGpKpEJ5Bq2d0X/aOisayldS7wKBwqEJVkSRzKLIx/2tNx8sX4fY4EiZ
+         RQ5bu25UUyi0mxJwX59AsEe6rRAucL39z9sRtQ+sFeL8kmFBEG8dXloYci5hYdxidOh2
+         WgaA==
+X-Forwarded-Encrypted: i=1;
+ AJvYcCVM/duBUPBDk3sUTj+xfx8iJFl5OUd5dyIvamkSbF24yBs/6rI+WBxRKLVa+eK53SAP2X2aj/+H7fsU6oI=@hotmail.sg
+X-Gm-Message-State: AOJu0Yz9fJmmZT60Q6wJ9hIyojAnFEKNBBfL1oP5VJ0j2o9ktHo6XvWl
+	Yu1nORoz2SGlQR17S5MM9V5x5h3hChDfI/UOlXun+tnsm9UFltmfjjMHB4HrP85oRblFmJj8nnN
+	EtTHOgK7tEw7xeXz2XRxjBUJ1flA8jnNZEOkhunhdUeubIg==
+Reply-To: Mardella Hunter <treid5271@gemalim.org>
+Sender: Google Calendar <calendar-notification@google.com>
+Message-ID: <calendar-7a6fca2a-39aa-495c-8afa-178bcf649e99@google.com>
+Date: Tue, 03 Feb 2026 21:51:16 +0000
+Subject: Hey - Your Confirmation for GGE is Complete
+From: Mardella Hunter <treid5271@gemalim.org>
+Content-Type: multipart/alternative; boundary="0000000000005971510649f2701b"
+X-IncomingHeaderCount: 15
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Feb 2026 21:51:16.6791
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 250b9c15-5c25-458e-42bf-08de636e5b8e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SJ1PEPF000023D7:EE_|SA1P220MB1532:EE_|LV8P220MB1356:EE_
+To: Undisclosed recipients:;
+X-MS-Exchange-Organization-AuthSource: 
+ SJ1PEPF000023D7.namprd21.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 250b9c15-5c25-458e-42bf-08de636e5b8e
+X-MS-DelayedDelivery: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.210.74
+X-SID-Result: NONE
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|45200799018|58200799021|46080799006|970799060|87000799018|51300799021|9800799015|9000799056|461199028|26130799006|27070799003|29080799006|9020799016|70000799015|13020799006|32020799003|2700799029|34130799006|69000799018|440099028|30041999003|3412199025|18021999003|1380799030|1360799030|1370799030|17301999023;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Feb 2026 21:51:16.6378
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 250b9c15-5c25-458e-42bf-08de636e5b8e
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SJ1PEPF000023D7.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1532
+X-MS-Exchange-Transport-EndToEndLatency: 09:01:20.2122427
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9564.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9525003)(10145025)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0

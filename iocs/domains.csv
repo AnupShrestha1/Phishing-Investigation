@@ -1,0 +1,10 @@
+case_id,ioc,context
+case-001,gemalim.org,sender domain
+case-001,google.com,Google Calendar infrastructure
+case-002,dlit.mtt.ac.th,
+case-002,gmail.com,
+case-002,mail.gmail.com,
+case-002,redacted.com,
+case-003,google.com,
+case-003,redacted.com,
+case-003,substackss.firebaseapp.com,

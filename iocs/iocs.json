@@ -1,0 +1,85 @@
+[
+    {
+        "case": "case-001",
+        "ip_addresses": [
+            "209.85.210.74"
+        ],
+        "email_addresses": [
+            "calendar-7a6fca2a-39aa-495c-8afa-178bcf649e99@google.com",
+            "calendar-notification@google.com",
+            "treid5271@gemalim.org"
+        ],
+        "domains": [
+            "gemalim.org",
+            "google.com"
+        ],
+        "urls": [],
+        "hashes": [
+            {
+                "hash": "99ededf7fe48c67a03657dacee2b5d144db86d445dee60744f1cd9f3c8bce71a",
+                "type": "SHA256"
+            },
+            {
+                "hash": "ed12d62c87f704a2a3851e0263236142b707b6261c0dfe60fe02bc43940f2b3b",
+                "type": "SHA256"
+            }
+        ]
+    },
+    {
+        "case": "case-002",
+        "ip_addresses": [
+            "209.85.160.194"
+        ],
+        "email_addresses": [
+            "33124@dlit.mtt.ac.th",
+            "CAJFivM9tEoOui_gqYF7yva2PUtBjBDvcJsgkwcV-3H3fYb4qjg@mail.gmail.com",
+            "captwilliamsdswensom@gmail.com",
+            "fdy3215@gmail.com",
+            "redacted@redacted.com"
+        ],
+        "domains": [
+            "dlit.mtt.ac.th",
+            "gmail.com",
+            "mail.gmail.com",
+            "redacted.com"
+        ],
+        "urls": [],
+        "hashes": [
+            {
+                "hash": "41320cbbd44f209d99838b2150269f6361f9eee0767658f00add8c43f14d09ff",
+                "type": "SHA256"
+            },
+            {
+                "hash": "72007b6615156f930e70b2db432bba1f312fd8940a6be28381dfe1dd45dfa065",
+                "type": "SHA256"
+            }
+        ]
+    },
+    {
+        "case": "case-003",
+        "ip_addresses": [
+            "209.85.222.71"
+        ],
+        "email_addresses": [
+            "0000000000008a523d064a99957c@google.com",
+            "noreply@substackss.firebaseapp.com",
+            "redacted@redacted.com"
+        ],
+        "domains": [
+            "google.com",
+            "redacted.com",
+            "substackss.firebaseapp.com"
+        ],
+        "urls": [],
+        "hashes": [
+            {
+                "hash": "25250de3c3297329c7a18bf7cc192cbed43af44142d5677df8d00ee4db3fc331",
+                "type": "SHA256"
+            },
+            {
+                "hash": "97c13a581f08deb33051f900c96c95d49a564456d6b4a2eee7aade8c41b85421",
+                "type": "SHA256"
+            }
+        ]
+    }
+]
